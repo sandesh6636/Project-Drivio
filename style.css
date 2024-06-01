@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-family: "montserrat";
+}
+nav {
+  position: fixed;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vw 15vw;
+  /* background-color: blueviolet; */
+  height: 12vh;
+}
+nav h1 {
+  color: #ffff;
+}
+nav ul li {
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  gap: 2.5vw;
+}
+ul li {
+  font-size: 0.9vw;
+  font-weight: 900;
+  margin-bottom: 2.6vw;
+}
+ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+.nav-element h5 {
+  color: #ffff;
+}
+.nav-part2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 1vh 0;
+  position: relative;
+  z-index: 10;
+}
+.nav-part2 h5 {
+  margin-bottom: 0.5vw;
+  /* opacity: 0; */
+  display: none;
+  overflow: hidden;
+}
+.nav-part2 h5 span {
+  font-weight: 500;
+  font-size: 0.77vw;
+  display: inline-block;
+  transform: translateY(25px);
+  cursor: pointer;
+}
+.nav-part2 h5 span:hover {
+  font-weight: 580;
+}
+#nav-bottom {
+  height: 0vh;
+  width: 70%;
+  top: 100%;
+  position: absolute;
+  /* background-color: red; */
+  background-color: #000000;
+  border-bottom: 2px solid #fff;
+
+  z-index: 9;
+}
+
+button {
+  font-size: 12px;
+  position: relative;
+  /* margin: auto; */
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #fff;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button span {
+  color: #464646;
+}
+
+button .border {
+  position: absolute;
+  border: 0.15em solid #fff;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .border {
+  display: block;
+  width: 9.9em;
+  height: 3.7em;
+}
+
+.full-rounded {
+  border-radius: 2em;
+}
+video {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+}
+#cursor {
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  background-color: #bae92f;
+  border-radius: 50%;
+  z-index: 99;
+}
+#cursor-blur {
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  background-color: rgba(150, 193, 30, 0.363);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 10;
+}
