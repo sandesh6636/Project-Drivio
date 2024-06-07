@@ -1,6 +1,23 @@
 let crs = document.querySelector("#cursor");
 let blur = document.querySelector("#cursor-blur");
 let footer = document.querySelector(".footer");
+const btn = document.querySelector(".full-rounded");
+const btn_a = document.querySelector("#our-a");
+const btn_f = document.querySelector("#our-f");
+const btn_i = document.querySelector("#our-i");
+// console.log(btn);
+btn.addEventListener("click", () => {
+  window.location.href = "login2.html";
+});
+// btn_a.addEventListener("click", () => {
+//   window.location.href = "#card1";
+// });
+// btn_f.addEventListener("click", () => {
+//   window.location.href = "#card2";
+// });
+// btn_i.addEventListener("click", () => {
+//   window.location.href = "#card3";
+// });
 document.addEventListener("mousemove", function (delts) {
   crs.style.left = delts.x + 20 + "px";
   crs.style.top = delts.y + 20 + "px";
@@ -34,7 +51,7 @@ footer.addEventListener("mouseleave", (e) => {
   enableEffects();
 });
 function navAnimation() {
-  let nav = document.querySelector("nav");
+  let nav = document.querySelector(".nav-part2");
   nav.addEventListener("mouseenter", function () {
     // gsap.to("#nav-bottom", {
     //   height: "12vh",
@@ -117,20 +134,20 @@ gsap.from("#about-us img,#about-us-in", {
     scrub: 2,
   },
 });
-gsap.from(".card", {
-  scale: 0.9,
-  opacity: 0,
-  duration: 0.5,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".card",
-    scroller: "body",
-    // markers: true,
-    start: "top 70%",
-    end: "top 65%",
-    scrub: 1,
-  },
-});
+// gsap.from(".card", {
+//   scale: 0.9,
+//   opacity: 0,
+//   duration: 0.5,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".card",
+//     scroller: "body",
+//     // markers: true,
+//     start: "top 70%",
+//     end: "top 65%",
+//     scrub: 1,
+//   },
+// });
 gsap.from("#colon1", {
   y: -70,
   x: -70,

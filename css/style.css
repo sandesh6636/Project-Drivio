@@ -332,7 +332,7 @@ video {
   transition: all ease 0.6s;
 }
 #card1 {
-  background-image: url(Assets/images/p7.jpg);
+  background-image: url(Assets/images/p10.jpg);
 }
 #card2 {
   background-image: url(Assets/images/p5.jpg);
@@ -363,7 +363,7 @@ video {
 }
 .card:hover .overlay {
   opacity: 1;
-  transform: rotate3d(-1, 1, 0, 10deg);
+  /* transform: rotate3d(-1, 1, 0, 10deg); */
 }
 .card:hover {
   transform: rotate3d(-1, 1, 0, 20deg);
@@ -389,12 +389,16 @@ video {
   height: 50px;
 }
 #page3 #colon1 {
+  height: 66px;
+  width: 119px;
   top: 25%;
-  left: 15%;
+  left: 13%;
 }
 #page3 #colon2 {
+  height: 66px;
+  width: 119px;
   bottom: 25%;
-  right: 20%;
+  right: 15%;
 }
 #page4 {
   height: 30vh;
@@ -417,7 +421,8 @@ video {
 .elem h2 {
   height: 100%;
   width: 100%;
-  background-color: #2f86e9;
+  background-color: #052ba7;
+  /* background: transparent; */
   color: #000;
   font-weight: 900;
   display: flex;
@@ -429,6 +434,7 @@ video {
   position: absolute;
   z-index: 10;
 }
+
 .elem img {
   height: 100%;
   width: 100%;
@@ -438,6 +444,11 @@ video {
 }
 .elem:hover h2 {
   color: #fff;
+  border-radius: 1px solid #000;
+  color: white;
+
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
   background: transparent;
 }
 .elem:hover img {
@@ -449,9 +460,9 @@ video {
   top: -50px;
   font-weight: 900;
   font-family: gillory;
-  color: #ffff;
+  color: #000;
   /* background-color: #bae92f; */
-  -webkit-text-stroke: 2px #2f86e9;
+  -webkit-text-stroke: 2px #ffff;
 }
 
 .footer {
