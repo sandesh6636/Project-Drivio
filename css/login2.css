@@ -56,7 +56,7 @@ nav h1 {
   transform: translateY(-50%);
   border-radius: 50%;
   transition: 1.8s ease-in-out;
-  z-index: 6;
+  /* z-index: 6; */
 }
 form {
   display: flex;
@@ -245,5 +245,39 @@ form.sign-up-form {
 }
 .container.sign-up-mode form.sign-up-form {
   z-index: 2;
+  opacity: 1;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  transition: 1s 0.7s ease-in-out;
+}
+
+form.sign-in-form {
+  z-index: 6; /* Ensure sign-in form is above other elements */
+}
+
+form.sign-up-form {
+  z-index: 5;
+  opacity: 0;
+}
+
+.panel {
+  z-index: 4; /* Panels should have a lower z-index than the form */
+}
+
+.container.sign-up-mode form.sign-in-form {
+  z-index: 5;
+  opacity: 0;
+}
+
+.container.sign-up-mode form.sign-up-form {
+  z-index: 6; /* Ensure sign-up form is above other elements */
   opacity: 1;
 }
