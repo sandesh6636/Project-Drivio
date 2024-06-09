@@ -332,13 +332,16 @@ video {
   transition: all ease 0.6s;
 }
 #card1 {
-  background-image: url(Assets/images/p10.jpg);
+  /* background-image:url(Assets/images/p10.jpg); */
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/02/03/08/people-talking-1876726_960_720.jpg);
 }
 #card2 {
-  background-image: url(Assets/images/p5.jpg);
+  /* background-image: url(Assets/images/p5.jpg); */
+  background-image: url(https://cdn.pixabay.com/photo/2019/09/25/09/36/team-4503157_960_720.jpg);
 }
 #card3 {
-  background-image: url(Assets/images/p6.jpg);
+  /* background-image: url(Assets/images/p6.jpg); */
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/21/14/03/woman-1845572_960_720.jpg);
 }
 .overlay {
   height: 100%;

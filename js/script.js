@@ -5,6 +5,8 @@ const btn = document.querySelector(".full-rounded");
 const btn_a = document.querySelector("#our-a");
 const btn_f = document.querySelector("#our-f");
 const btn_i = document.querySelector("#our-i");
+const btn_c = document.querySelector(".connect");
+const btn_o = document.querySelector("#owner");
 // console.log(btn);
 btn.addEventListener("click", () => {
   window.location.href = "login2.html";
@@ -15,9 +17,12 @@ btn.addEventListener("click", () => {
 // btn_f.addEventListener("click", () => {
 //   window.location.href = "#card2";
 // });
-// btn_i.addEventListener("click", () => {
-//   window.location.href = "#card3";
-// });
+btn_o.addEventListener("click", () => {
+  window.location.href = "owner.html";
+});
+btn_c.addEventListener("click", () => {
+  window.location.href = "contact.html";
+});
 document.addEventListener("mousemove", function (delts) {
   crs.style.left = delts.x + 20 + "px";
   crs.style.top = delts.y + 20 + "px";
