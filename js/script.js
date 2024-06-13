@@ -7,6 +7,7 @@ const btn_f = document.querySelector("#our-f");
 const btn_i = document.querySelector("#our-i");
 const btn_c = document.querySelector(".connect");
 const btn_o = document.querySelector("#owner");
+const btn_d = document.querySelector("#driver");
 // console.log(btn);
 btn.addEventListener("click", () => {
   window.location.href = "login2.html";
@@ -19,6 +20,9 @@ btn.addEventListener("click", () => {
 // });
 btn_o.addEventListener("click", () => {
   window.location.href = "owner.html";
+});
+btn_d.addEventListener("click", () => {
+  window.location.href = "driver.html";
 });
 btn_c.addEventListener("click", () => {
   window.location.href = "contact.html";
