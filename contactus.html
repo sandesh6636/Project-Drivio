@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DriveService</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p, label {
+            line-height: 1.8;
+            color: #cccccc;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #444444;
+            border-radius: 6px;
+            background-color: #333333;
+            color: #ffffff;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .contact-form input:focus, .contatact-form textarea:focus {
+            border-color: #1e90ff;
+            outline: none;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-form button {
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .social-media {
+            margin-top: 30px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ffffff;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #1e90ff;
+        }
+        @media (max-width: 768px) {
+            .container {padding: 30px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .contact-form button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .social-media a {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+        <h2>Customer Support</h2>
+        <p><strong>Phone:</strong></p>
+        <p>Toll-Free: 1-800-DRIVE-NOW (1-800-374-8369)</p>
+        <p>Local: (123) 456-7890</p>
+        
+        <p><strong>Email:</strong> <ahref="mailto:support@driveservice.com" style="color: #1e90ff;">support@driveservice.com</a></p>
+        
+        <p><strong>Hours of Operation:</strong></p>
+        <p>Monday to Friday: 8:00 AM - 8:00 PM</p>
+        <p>Saturday: 9:00 AM - 5:00 PM</p>
+        <p>Sunday: Closed</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Your Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea><button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="social-media">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media for the latest updates and exclusive offers:</p>
+        <p>
+            <a href="http://facebook.com/driveservice" target="_blank">Facebook</a>
+            <a href="http://twitter.com/driveservice" target="_blank">Twitter</a>
+            <a href="http://instagram.com/driveservice" target="_blank">Instagram</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
